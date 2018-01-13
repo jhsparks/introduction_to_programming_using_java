@@ -33,6 +33,9 @@ public class Exercise3_9
 			System.out.print(firstNineArray[i]);
 		}
 		
+		//close input
+		input.close();
+		
 		//compute 10th digit using formula
 		//(d1 * 1 + d2 * 2 + d3 * 3 + d4 * 4 + d5 * 5 + d6 * 6 + d7 * 7 + d8 * 8 + d9 * 9) % 11
 		tenth = (firstNineArray[0] * 1 + firstNineArray[1] * 2 + firstNineArray[2] * 
