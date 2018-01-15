@@ -9,6 +9,12 @@ import java.util.Scanner;
  */
 public class Exercise7_3
 {
+	/*
+	 * This method counts the occurrence of numbers
+	 * in an input
+	 * preconditon: input must be from 1-100
+	 * postcondition: the occurrence of each number is displayed
+	 */
 	public static void main(String[] args)
 	{
 		//declare and initialize variables
