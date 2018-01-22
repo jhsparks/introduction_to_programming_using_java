@@ -16,7 +16,7 @@ public class Interview
         //find LENGTH OF longest substring of S that meets restrictions
         //if not substring fits, return -1;
         
-		String S = "a0aa0B";
+		String S = "a0aBa0B";
 		
         //declare and initialize variables
         int length = -1;
@@ -26,7 +26,7 @@ public class Interview
         //method: use regex
         
         //create pattern
-        Pattern regPattern = Pattern.compile("[A-Z][\\D+]*");
+        Pattern regPattern = Pattern.compile("[\\D]*[A-Z][\\D+]*");
         
         //create matcher
         Matcher matchOb = regPattern.matcher(S);
