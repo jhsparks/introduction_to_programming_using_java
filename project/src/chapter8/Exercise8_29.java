@@ -1,10 +1,11 @@
 package chapter8;
 
+import java.util.Scanner;
 /*
  * This class contains the main method for a program that compares two matrices
  * @author: joe sparks
  */
-public class Exercise8_23
+public class Exercise8_29
 {
 	/*
 	 * This method is a test method for the class to call the equals method
@@ -12,11 +13,33 @@ public class Exercise8_23
 	 */
 	public static void main(String[] args)
 	{
-		//initiallize matrices
-		int[][] m1 = {{3, 5,}, {6, 9}};
-		int[][] m2 = {{3, 4,}, {6, 9}}; 
+		//declare and initialize matrices
+		int[][] m1 = new int[3][3];
+		int[][] m2 = new int[3][3]; 
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter List 1: ");
+		for(int r = 0; r < m1.length; r ++)
+		{
+			for(int c = 0; c < m1[r].length; c++)
+			{
+				m1[r][c] = input.nextInt();
+			}
+		}
+		
+		System.out.println("Enter List 2: ");
+		for(int r = 0; r < m2.length; r ++)
+		{
+			for(int c = 0; c < m2[r].length; c++)
+			{
+				m2[r][c] = input.nextInt();
+			}
+		}
 		
 		System.out.println(equals(m1, m2));
+		
+		input.close();
 	}
 	
 	/*
