@@ -16,7 +16,7 @@ public class Interview
         //find LENGTH OF longest substring of S that meets restrictions
         //if not substring fits, return -1;
         
-		String S = "a0aBa0B";
+		String S = "a0abacBaad0B";
 		
         //declare and initialize variables
         int length = -1;
